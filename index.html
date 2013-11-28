@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>众意集团首页</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery.min.js"></script>
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/png.js"></script>
+<script type="text/javascript">
+PNG.fix('.png')
+</script>
+<![endif]-->
+<style>
+	.bg{ width:100%; position:relative; height:828px;}
+	.bg_one{ background:url(images/bg1.jpg) center 0px no-repeat fixed;}
+	.top{ width:100%; height:85px; background:url(images/top_bg.png) center 0px no-repeat; position:absolute;}
+	.bg_two{background:url(images/bg2.jpg) center 0px no-repeat fixed;}
+	.bg_three{background:url(images/bg3.jpg) center 0px no-repeat fixed;}
+	.index_new{ float:left; margin-left:130px; width:478px; margin-top:264px;}
+	.bg .center{ position:relative;}
+	.shou{ position:absolute; width:506px; height:480px; background:url(images/shou.png) no-repeat; top:169px; right:-159px; opacity:0;
+		transform: rotate(30deg);
+-ms-transform: rotate(30deg);		/* IE 9 */
+-webkit-transform: rotate(30deg);	/* Safari and Chrome */
+-o-transform: rotate(30deg);		/* Opera */
+-moz-transform: rotate(30deg);		/* Firefox */
+	}
+	/*top:238px; right:0px;*/
+	.border{ width:100%; height:123px; position:absolute; bottom:-74px; left:0px; z-index:10;}
+	.borderO{ background:url(images/border_bg2.png) center 0px no-repeat;}
+	.borderT{ background:url(images/border_bg1.png) center 0px no-repeat; bottom:-40px;}
+	.index_about{ float:left; width:402px; height:376px; margin-left:87px; margin-top:246px;}
+	.Eagle{ position:absolute; width:77px; height:90px; background:url(images/Eagle.png) no-repeat; left:-300px; top:524px; }
+	.bg2_circle{position:absolute; width:411px; height:322px; background:url(images/bg2_circle.png) no-repeat; left:274px; top:544px;}
+</style>
+</head>
+
+<body>
+
+<section class="bg bg_one" data-type="background" data-speed="4">
+	<header class="top"></header>
+    <div class="center">
+    	<div class="index_new"><img src="images/new.png" class="png"></div>
+        <div class="shou"></div>
+    </div>
+    <div class="border borderO png"></div>
+</section>
+
+<section class="bg bg_two" data-type="background" data-speed="5" data-offsetY="164">
+	<div class="center">
+    	<div class="index_about"><img src="images/index_about_bg.png" /></div>
+        <div class="Eagle png"></div>
+        <div class="bg2_circle png"></div>
+    </div>
+	
+	<div class="border borderT png"></div>
+</section>
+
+<section class="bg bg_three" data-type="background" data-speed="6" data-offsetY="278">
+	
+</section>
+
+<script>
+	$(function(){
+		
+	})
+</script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
